@@ -1,6 +1,4 @@
-from datetime import datetime, timedelta
 from django.http import HttpResponse
-
 from .tasks import send_notification
 from .models import Employee, Institution, Department, Position, Task
 from .serializers import EmployeeSerializer, InstitutionSerializer, DepartmentSerializer, PositionSerializer, TaskSerializer
@@ -8,7 +6,6 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.shortcuts import render
 from rest_framework.views import APIView
-from .service import send
 
 # Сотрудники
 
